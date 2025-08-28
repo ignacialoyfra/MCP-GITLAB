@@ -1,0 +1,18 @@
+[project]
+name = "gitlab-mcp-python"
+version = "0.1.0"
+description = "GitLab MCP server (Python port of @zereight/mcp-gitlab)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+"mcp[cli]", # SDK oficial MCP (servidor + CLI)
+"python-gitlab>=4", # Cliente oficial GitLab REST v4
+]
+
+
+[project.scripts]
+# Permite: `python -m gitlab_mcp_python` si luego se empaqueta como módulo.
+
+
+[tool.uv]
+# Si usas uv, este archivo te sirve tal cual.
